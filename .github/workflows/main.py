@@ -9,14 +9,14 @@ from mcp_agent.workflows.llm.augmented_llm_openai import OpenAIAugmentedLLM
 from mcp_agent.workflows.llm.augmented_llm import RequestParams
 
 st.set_page_config(
-    page_title="MCP Agent",
+    page_title="Scholar Agent",
     page_icon=":robot:",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
-st.markdown("<h1 class='main-header'>MCP Agent</h1>", unsafe_allow_html=True)
-st.markdown("Interact with a powerful web browsing agent that can navigate and interact with websites.")
+st.markdown("<h1 class='main-header'>Google Scholar MCP Agent</h1>", unsafe_allow_html=True)
+st.markdown("Interact with a powerful web agent that can scrape data from Google Scholar.")
 
 with st.sidebar:
     st.markdown("### Example commands")
