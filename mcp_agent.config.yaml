@@ -10,11 +10,11 @@ logger:
 
 mcp:
   servers:
-  
     scholar:
       command: python
       args: 
-        - .github/workflows/scholar-src/tool.py
+        - -m
+        - scholar_mcp.tools.scholar
 
     arxiv-mcp-server:  
       command: uv  
