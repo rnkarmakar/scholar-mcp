@@ -9,5 +9,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - run: uv pip install arxiv-mcp-server    
       - run: pip install -e .
       - run: python -m scholar_mcp.tools.scholar --help || true
