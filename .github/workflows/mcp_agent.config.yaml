@@ -12,8 +12,9 @@ mcp:
   servers:
   
     scholar:
-      command: "/home/rathindra/julia_python_project/pyjulia_env/bin/python"
-      args: ["/home/rathindra/julia_python_project/mcp/langchainmcp/tool.py"]
+      command: python
+      args: 
+        - .github/workflows/scholar-src/tool.py
 
     arxiv-mcp-server:  
       command: uv  
