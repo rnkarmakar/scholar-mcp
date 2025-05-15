@@ -1,0 +1,15 @@
+[project]
+name = "scholar-mcp"
+version = "0.1.0"
+description = "Google Scholar FastMCP server and Streamlit front-end"
+authors = [{name = "Rathindra Nath Karmakar"}]
+dependencies = [
+  "streamlit>=1.28",
+  "mcp-agent>=0.0.14",
+  "openai>=1.0.0",
+  "requests",
+  "beautifulsoup4",
+]
+
+[project.scripts]
+scholar-mcp = "scholar_mcp.app.streamlit_app:main"
