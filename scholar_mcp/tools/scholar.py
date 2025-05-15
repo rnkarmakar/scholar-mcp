@@ -1,4 +1,3 @@
-from scholar_mcp.tools.scholar import mcp
 from mcp.server.fastmcp import FastMCP
 import requests
 from bs4 import BeautifulSoup
