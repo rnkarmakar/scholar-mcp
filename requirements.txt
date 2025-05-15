@@ -3,5 +3,4 @@ mcp-agent>=0.0.14
 openai>=1.0.0
 asyncio>=3.4.3
 arxiv>=2.0.0
-bs4
 requests
