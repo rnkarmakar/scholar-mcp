@@ -12,22 +12,18 @@ mcp:
   servers:
     scholar:
       command: python
-      args: 
+      args:
         - -m
         - scholar_mcp.tools.scholar
 
-    arxiv-mcp-server:  
-      command: uv  
-      args:  
-        - --directory  
-        - /home/rathindra/julia_python_project/mcp/arxiv-mcp-server
-        - run  
-        - arxiv-mcp-server  
-        - --storage-path  
-        - /home/rathindra/julia_python_project/mcp/arxiv-mcp-server/papers
-
-
-
+    arxiv-mcp-server:          
+      command: uv              
+      args:
+        - tool                 
+        - run
+        - arxiv-mcp-server
+        - --storage-path
+        - ./data/arxiv_papers  
 
 openai:
   base_url: https://openrouter.ai/api/v1
