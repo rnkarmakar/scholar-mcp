@@ -3,13 +3,18 @@ name = "scholar-mcp"
 version = "0.1.0"
 description = "Google Scholar FastMCP server and Streamlit front-end"
 authors = [{name = "Rathindra Nath Karmakar"}]
+requires-python = ">=3.10"
+
 dependencies = [
-  "streamlit>=1.28",
   "mcp-agent>=0.0.14",
   "openai>=1.0.0",
   "requests",
   "beautifulsoup4",
+  "streamlit>=1.28",
 ]
 
+[tool.setuptools.packages.find]
+where = ["src"]          # <─ this one line makes the magic work
+
 [project.scripts]
-scholar-mcp = "scholar_mcp.app.streamlit_app:main"
+scholar-mcp = "scholar_mcp.tool:mcp.run"
