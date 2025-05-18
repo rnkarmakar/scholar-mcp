@@ -1,32 +1,16 @@
-execution_engine: asyncio
-logger:
-  transports: [console, file]
-  level: debug
-  progress_display: true
-  path_settings:
-    path_pattern: "logs/mcp-agent-{unique_id}.jsonl"
-    unique_id: "timestamp"
-    timestamp_format: "%Y-%m-%dT%H:%M:%S"
-
 mcp:
   servers:
-    scholar:
-      command: python
+    scholar-mcp:
+      command: uv
       args:
-        - -m
-        - scholar_mcp.tools.scholar
-
-    arxiv-mcp-server:          
-      command: uv              
+        - tool            # <─ utility bundled with 'uv'
+        - run
+        - scholar-mcp     # ← the package's console-script
+    arxiv-mcp-server:
+      command: uv
       args:
-        - tool                 
+        - tool
         - run
         - arxiv-mcp-server
         - --storage-path
-        - ./data/arxiv_papers  
-
-openai:
-  base_url: https://openrouter.ai/api/v1
-  default_model: openai/gpt-4.1-mini
-  api_key: #ADD YOUR OPENROUTER API KEY
-
+        - ./data/arxiv_papers
