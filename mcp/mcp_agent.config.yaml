@@ -31,6 +31,6 @@ mcp:
 openai:
   base_url: https://openrouter.ai/api/v1
   default_model: openai/gpt-4.1-mini
-  api_key: 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
+  api_key: #api_key
 
 
