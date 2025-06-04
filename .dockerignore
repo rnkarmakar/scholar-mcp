@@ -1,5 +1,35 @@
-.git
-.github
-logs
-.idea
-*.md
+# Git and GitHub
+.git/
+.github/
+.gitignore
+
+# IDE and OS
+.vscode/
+.DS_Store
+
+# Python-generated
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+
+# Docker
+.dockerignore
+docker-compose.yml
+Dockerfile
+
+# Logs
+logs/
+
+# Secrets
+mcp_agent.config.yaml
+mcp_agent.secrets.yaml*
+
+# Misc
+LICENSE
+README.md

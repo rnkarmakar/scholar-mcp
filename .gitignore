@@ -1,8 +1,20 @@
+# IDE and OS
+.vscode/
+.DS_Store
+
+# Python-generated
 __pycache__/
-*.py[cod]
-*.egg-info/
-.env
-.venv/
-dist/
+*.py[oc]
 build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+
+# Logs
 logs/
+
+# Secrets
+mcp_agent.secrets.yaml

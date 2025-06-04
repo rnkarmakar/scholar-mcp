@@ -1,20 +1,15 @@
 [project]
 name = "scholar-mcp"
 version = "0.1.0"
-description = "Google Scholar FastMCP server and Streamlit front-end"
-authors = [{name = "Rathindra Nath Karmakar"}]
-requires-python = ">=3.10"
-
-dependencies = [
-  "mcp-agent>=0.0.14",
-  "openai>=1.0.0",
-  "requests",
-  "beautifulsoup4",
-  "streamlit>=1.28",
+description = "Google Scholar FastMCP server and Streamlit frontend"
+authors = [
+  { name = "Rathindra Nath Karmakar", email = "rnka09122001@gmail.com" },
 ]
-
-[tool.setuptools.packages.find]
-where = ["src"]          # <─ this one line makes the magic work
-
-[project.scripts]
-scholar-mcp = "scholar_mcp.tool:mcp.run"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "beautifulsoup4>=4.13.4",
+  "mcp-agent>=0.0.21",
+  "requests>=2.32.3",
+  "streamlit>=1.45.1",
+]
